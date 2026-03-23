@@ -1,6 +1,6 @@
-# 🏥 MediQueue — Medical Appointment Management App
+# 🏥 MediQueue — Medical Appointment App
 
-Flutter mobile app with token-based authentication, personalized welcome, and full appointment management.
+Flutter mobile app with personalized welcome, and full appointment management.
 
 ## Quick Start
 ```bash
