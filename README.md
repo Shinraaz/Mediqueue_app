@@ -12,18 +12,15 @@ flutter run
 ## Demo Accounts
 | Username | Password | Name |
 |---|---|---|
-| `admin` | `admin123` | Admin User |
-| `juan` | `password123` | Juan dela Cruz |
-| `maria` | `password123` | Maria Santos |
+| `admin` | `admin123` | Admin |
 
 ## Features
 - ✅ Token-based auth (stored in SharedPreferences)
-- ✅ Personalized "Good Morning, Juan! 👋" welcome (blue gradient hero)
+- ✅ Personalized "Good Morning, User!" welcome (blue gradient hero)
 - ✅ Register new accounts
 - ✅ 4-step appointment booking wizard
 - ✅ Doctor browser with search & specialty filter
 - ✅ Cancel appointments
-- ✅ Auth token display (reveal/copy) in Profile
 - ✅ Session persistence across app restarts
 - ✅ Blue & white Material 3 theme
 
