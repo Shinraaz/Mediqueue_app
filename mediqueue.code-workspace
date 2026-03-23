@@ -1,0 +1,27 @@
+{
+  "folders": [{ "path": "." }],
+  "settings": {
+    "editor.formatOnSave": true,
+    "dart.lineLength": 100,
+    "[dart]": {
+      "editor.defaultFormatter": "Dart-Code.dart-code",
+      "editor.formatOnSave": true,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": "off"
+    },
+    "files.exclude": {
+      "**/.dart_tool": true,
+      "**/.flutter-plugins": true,
+      "**/.flutter-plugins-dependencies": true
+    }
+  },
+  "extensions": { "recommendations": ["Dart-Code.flutter","Dart-Code.dart-code","usernamehw.errorlens","pkief.material-icon-theme"] },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      { "name": "MediQueue (Debug)", "request": "launch", "type": "dart", "program": "lib/main.dart" },
+      { "name": "MediQueue (Release)", "request": "launch", "type": "dart", "program": "lib/main.dart", "args": ["--release"] }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+# 🏥 MediQueue — Medical Appointment Management App
+
+Flutter mobile app with token-based authentication, personalized welcome, and full appointment management.
+
+## Quick Start
+```bash
+cd mediqueue
+flutter pub get
+flutter run
+```
+
+## Demo Accounts
+| Username | Password | Name |
+|---|---|---|
+| `admin` | `admin123` | Admin User |
+| `juan` | `password123` | Juan dela Cruz |
+| `maria` | `password123` | Maria Santos |
+
+## Features
+- ✅ Token-based auth (stored in SharedPreferences)
+- ✅ Personalized "Good Morning, Juan! 👋" welcome (blue gradient hero)
+- ✅ Register new accounts
+- ✅ 4-step appointment booking wizard
+- ✅ Doctor browser with search & specialty filter
+- ✅ Cancel appointments
+- ✅ Auth token display (reveal/copy) in Profile
+- ✅ Session persistence across app restarts
+- ✅ Blue & white Material 3 theme
+
+## Project Structure (matches requirements)
+```
+lib/
+├── main.dart
+├── theme/app_theme.dart
+├── models/ → user_model.dart, appointment_model.dart
+├── services/ → auth_service.dart, auth_provider.dart, appointment_service.dart
+├── screens/ → splash, login, register, main_shell, home, appointments, doctors, book_appointment, profile
+└── widgets/ → gradient_button, status_badge, animated_logo
+```
