@@ -9,7 +9,7 @@ flutter pub get
 flutter run
 ```
 
-## Demo Accounts
+## Demo Account
 | Username | Password | Name |
 |---|---|---|
 | `admin` | `admin123` | Admin |
