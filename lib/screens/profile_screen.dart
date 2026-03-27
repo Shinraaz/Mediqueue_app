@@ -4,6 +4,7 @@ import '../services/auth_provider.dart';
 import '../services/appointment_service.dart';
 import '../theme/app_theme.dart';
 import 'login_screen.dart';
+import 'privacy_policy_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -88,7 +89,13 @@ class ProfileScreen extends StatelessWidget {
               _settingTile(
                   Icons.lock_outline_rounded, 'Change Password', () {}),
               _settingTile(Icons.help_outline_rounded, 'Help & Support', () {}),
-              _settingTile(Icons.privacy_tip_outlined, 'Privacy Policy', () {}),
+              _settingTile(Icons.privacy_tip_outlined, 'Privacy Policy', () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => const PrivacyPolicyScreen()),
+                );
+              }),
               const SizedBox(height: 20),
 
               SizedBox(
