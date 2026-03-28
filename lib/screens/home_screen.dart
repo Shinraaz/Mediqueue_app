@@ -8,6 +8,7 @@ import '../theme/app_theme.dart';
 import '../widgets/status_badge.dart';
 import 'book_appointment_screen.dart';
 import 'find_doctor_screen.dart';
+import 'history_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -218,7 +219,16 @@ class _HomeScreenState extends State<HomeScreen>
                               FindDoctorScreen(patientName: patientName)))
                   .then((_) => setState(() {}))),
           const SizedBox(width: 12),
-          _action('📋', 'My\nHistory', AppTheme.primaryLight, () {}),
+          _action(
+              '📋',
+              'My\nHistory',
+              AppTheme.primaryLight,
+              () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) =>
+                              HistoryScreen(patientName: patientName)))
+                  .then((_) => setState(() {}))),
         ]),
       ]);
 
